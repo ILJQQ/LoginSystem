@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1">
+    <link rel="stylesheet" type="text/css" href="StyleSheet/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="StyleSheet/management.css">
+    <title>后台管理界面</title>
+</head>
+<body>
+<!--父容器-->
+<div class="container all">
+    <!--使用bootstrap格栅功能-->
+    <div class="row">
+        <!--左侧导航栏-->
+        <div class="col-md-2 leftBar navbar-inverse sidebar-menu">
+            <img class="img-responsive img-circle bigIcon" src="images/littleGirl.jpg">
+            <a href="#userMeun" class="nav-header menu-first collapsed" data-toggle="collapse"><i
+                    class="icon-user-md icon-large"></i> 用户管理</a>
+            <ul id="userMeun" class="nav nav-list collapse menu-second">
+                <li><a href="#"><i class="icon-user"></i> 增加用户</a></li>
+                <li><a href="#"><i class="icon-edit"></i> 修改用户</a></li>
+                <li><a href="#"><i class="icon-trash"></i> 删除用户</a></li>
+                <li><a href="#"><i class="icon-list"></i> 用户列表</a></li>
+
+            </ul>
+            <a href="#articleMenu" class="nav-header menu-first collapsed" data-toggle="collapse"><i
+                    class="icon-book icon-large"></i>课程管理</a>
+            <ul id="articleMenu" class="nav nav-list collapse menu-second">
+                <li><a href="#"><i class="icon-pencil"></i> 添加课程</a></li>
+                <li><a href="#"><i class="icon-list-alt"></i> 修改课程</a></li>
+                <li><a href="#"><i class="icon-list-alt"></i> 删除课程</a></li>
+                <li><a href="#"><i class="icon-list-alt"></i> 课程列表</a></li>
+            </ul>
+            <a href="#pointMenu" class="nav-header menu-first collapsed" data-toggle="collapse"><i
+                    class="icon-book icon-large"></i>积分管理</a>
+            <ul id="pointMenu" class="nav nav-list collapse menu-second">
+                <li><a href="#"><i class="icon-pencil"></i> 查询积分</a></li>
+                <li><a href="#"><i class="icon-list-alt"></i> 获得积分</a></li>
+                <li><a href="#"><i class="icon-list-alt"></i> 积分换礼</a></li>
+            </ul>
+            <a href="#aboutUs" class="nav-header menu-first collapsed" data-toggle="collapse"><i
+                    class="icon-book icon-large"></i>关于我们</a>
+        </div>
+        <!--右侧主体界面-->
+        <div class="col-md-10 rightTable">
+            <!--顶部显示栏-->
+            <nav class="navbar navbar-default rightnav" role="navigation">
+                <div class="container-fluid">
+                    <!--左侧时间控件-->
+                    <div class="row">
+                        <span id="time" class="col-md-3 col-sm-5 col-xs-6">
+                        </span>
+                        <!--右侧用户管理下拉菜单-->
+                        <ul class="nav navbar-nav navbar-right col-md-2 col-sm-5 col-xs-6">
+                            <li><img class="img-responsive img-circle smallImg" src="images/littleGirl.jpg"></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">某某某学员<span
+                                        class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">用户中心</a></li>
+                                    <li><a href="#">会员积分</a></li>
+                                    <li><a href="#">礼品兑换</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="login.html">退出登录</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--主题内容父容器-->
+            <div class="row col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 content">
+                <!--导航条-->
+                <div class="btn-group switch col-md-12 col-sm-12 col-xs-12">
+                    <button type="button" class="btn col-md-3 col-sm-3 col-xs-3 setup-first">学习设置</button>
+                    <button type="button" class="btn col-md-3 col-sm-3 col-xs-3 setup-first">会员设置</button>
+                    <button type="button" class="btn col-md-3 col-sm-3 col-xs-3 setup-first">课程设置</button>
+                    <button type="button" class="btn col-md-3 col-sm-3 col-xs-3 setup-last">教师设置</button>
+                </div>
+                <!--项目栏-->
+                <div class="intro col-md-12 col-sm-12 col-xs-12 ">
+                    <span class="pull-left person">个人信息</span>
+                    <button type="button" class="pull-right btn-primary set-btn" href="#">修改信息</button>
+                </div>
+                <!--表格-->
+                <div class="grid col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-8 col-xs-8 col-sm-8 leftGrid">
+                        <div class="col-md-12 cName">
+                            中文名:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="text-left">某某某</i>
+                        </div>
+                        <div class="col-md-12 eName">
+                            英文名:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="text-left">TriMou</i>
+                        </div>
+                        <div class="col-md-12 address">
+                            地址:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="text-left">北京</i>
+                        </div>
+                        <div class="col-md-12 phone">
+                            电话:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="text-left">4000301</i>
+                        </div>
+                        <div class="col-md-12 email">
+                            邮箱:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="text-left">@qq.com</i>
+                        </div>
+                        <div class="col-md-12 duration">
+                            会员年限:
+                            <i class="text-left">两年三个月</i>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4 rightGrid">
+                        <img class="img-responsive img-thumbnail infoPic col-sm-8 col-md-10 col-xs-12
+                            col-md-offset-2 col-sm-offset-2"
+                             src="images/littleGirl.jpg">
+                    </div>
+                </div>
+                <div class="intro col-md-12 col-sm-12 col-xs-12 ">
+                    <span class="pull-left person">课程概要</span>
+                    <button type="button" class="pull-right btn-primary set-btn" href="#">申请延时</button>
+                </div>
+                <div class="secGrid col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-12 android">
+                        Android&nbsp;&nbsp;
+                        <i class="classType col-md-offset-4">就业班</i>
+                        <i class="length col-md-offset-4">24周</i>
+                    </div>
+                    <div class="col-md-12 iOS">
+                        iOS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="classType col-md-offset-4">就业班</i>
+                        <i class="length col-md-offset-4">20周</i>
+                    </div>
+                    <div class="col-md-12 Web">
+                        Web前端<i class="classType col-md-offset-4">就业班</i>
+                        <i class="length col-md-offset-4">18周</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/writeTime.js"></script>
+</body>
+</html>

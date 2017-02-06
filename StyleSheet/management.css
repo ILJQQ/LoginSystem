@@ -1,0 +1,167 @@
+/*父级容器设置页面大小*/
+.all {
+    width: 100%;
+    height: 700px;
+}
+
+/*右侧主体栏大小及背景*/
+.rightTable {
+    height: 700px;
+    background-color: #dcdcdc;
+}
+
+/*右侧置顶显示栏*/
+.rightnav {
+    margin: 0 -15px;
+}
+
+/*顶部时间控件*/
+#time {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/*圆形头像图标*/
+.smallImg {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+/*左侧导航栏*/
+.leftBar {
+    height: 700px;
+}
+
+/*下拉菜单字体居中*/
+.dropdown-menu {
+    text-align: center;
+}
+
+/*一级菜单*/
+.menu-first {
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid #999;
+    padding: 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*一级菜单鼠标划过状态*/
+.menu-first:hover {
+    text-decoration: none;
+    background-color: #F0C330;
+}
+
+.menu-first:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*二级菜单*/
+.menu-second li a {
+    height: 31px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+/*二级菜单鼠标划过样式*/
+.menu-second li a:hover {
+    text-decoration: none;
+    background-color: #F0C330;
+    border-right: 3px solid;
+    border-color: #5cb85c;
+}
+
+/*左侧大头像*/
+.bigIcon {
+    margin: 30px auto;
+    width: 150px;
+    height: 150px;
+}
+
+/*主体页面内容*/
+.content{
+    margin-top: 20px;
+}
+/*导航条*/
+.switch {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.switch button{
+    font-size: 12px;
+}
+
+/*导航条悬停*/
+button:hover {
+    background-color: #F0C330;
+}
+
+/*导航条按键颜色*/
+[class *= setup-] {
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+.leftGrid{
+    margin:0;
+    padding: 0;
+}
+.intro {
+    margin-top: 20px;
+}
+
+.infoPic{
+    margin-top: 60px
+}
+/*栅格系统统一样式*/
+
+.grid{
+    padding-bottom: 250px;
+    background-color: #fff;
+}
+/*个人信息*/
+.person {
+    font-size: 18px;
+    color: #808080;
+}
+
+/*头像格栅*/
+.rightGrid {
+    text-align: center;
+    border-left: 2px solid #ccc;
+    height: 250px;
+}
+
+/*格栅一左侧*/
+.col-md-12 {
+    height: 41px;
+    border-bottom: 2px solid #ccc;
+
+}
+
+.col-md-12 i {
+    font-size: 12px;
+    line-height: 41px;
+}
+
+.duration {
+    border: 0;
+}
+
+.secGrid{
+    background-color: #fff;
+    padding-bottom: 150px;
+}
